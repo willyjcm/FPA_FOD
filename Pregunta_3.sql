@@ -1,0 +1,9 @@
+--¿Cuántos incendios fueron causados en el estado de texas? Agrupar por tipo de causa.
+CREATE VIEW TOTAL_CAUSAS_DE_INCENDIOS_EN_EL_ESTADO_DE_TEXAS AS
+SELECT
+STAT_CAUSE_DESCR,
+count(*) AS TOTAL_CAUSE
+FROM Fires
+WHEN= 'TX'
+GROUP BY STAT_CAUSE_DESCR
+ORDER BY TOTAL_CAUSE DESC;
