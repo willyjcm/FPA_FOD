@@ -337,6 +337,27 @@ fig_6 = px.pie(
 
 fig_6.show()
 
+fig_7 = px.pie(
+                df_tiempo_de_contencion_de_los_incendios_en_MS,
+                values='Tardanza (en Días) de la contención del incendio',
+           names='Incendios contenidos el mismo día',
+            title='Días en que se contuvieron los incendios en Mississippi',
+            color_discrete_sequence=Colores
+            )
+
+fig_7.show()
+
+
+
+fig_8 = px.pie(
+                df_tiempo_de_contencion_de_los_incendios_en_AZ,
+                values='Tardanza (en Días) de la contención del incendio',
+           names='Incendios contenidos el mismo día',
+            title='Días en que se contuvieron los incendios en Arizona',
+            color_discrete_sequence=Colores
+            )
+
+fig_8.show()
 
 
 
