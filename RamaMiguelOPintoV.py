@@ -304,7 +304,15 @@ fig_3 = px.pie(
 fig_3.show()
 
 
+fig_4 = px.pie(
+                 df_tiempo_de_contencion_de_los_incendios_en_NY,
+               values='Tardanza (en Días) de la contención del incendio',
+               names='Incendios contenidos el mismo día',
+                     title='Días en que se contuvieron los incendios en Nueva York',
+                     color_discrete_sequence=Colores
+                     )
 
+fig_4.show()
 
 #Cierre de la conexción
 con.close()
