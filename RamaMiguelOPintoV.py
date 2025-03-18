@@ -265,6 +265,31 @@ print(
       )
 
 
+#Gráficos
+
+
+Colores = ['skyblue', 'blue']
+
+
+fig_1 = px.pie(
+                 df_tiempo_de_contencion_de_los_incendios_en_TX,
+               values='Tardanza (en Días) de la contención del incendio',
+               names='Incendios contenidos el mismo día',
+                     title='Días en que se contuvieron los incendios en Texas',
+                     color_discrete_sequence=Colores
+                     )
+
+fig_1.show()
+
+
+
+
+
+
+
+
+
+
 #Cierre de la conexción
 con.close()
 
