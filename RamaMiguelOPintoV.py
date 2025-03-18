@@ -282,7 +282,15 @@ fig_1 = px.pie(
 fig_1.show()
 
 
+fig_2 = px.pie(
+                 df_tiempo_de_contencion_de_los_incendios_en_CA,
+               values='Tardanza (en Días) de la contención del incendio',
+               names='Incendios contenidos el mismo día',
+                     title='Días en que se contuvieron los incendios en California',
+                     color_discrete_sequence=Colores
+                     )
 
+fig_2.show()
 
 
 
