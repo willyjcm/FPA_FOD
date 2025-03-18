@@ -251,7 +251,18 @@ WHERE
                                               """, con)
 
 
-
+print(
+      df_tiempo_de_contencion_de_los_incendios_en_TX,
+      df_tiempo_de_contencion_de_los_incendios_en_CA,
+      df_tiempo_de_contencion_de_los_incendios_en_GA,
+      df_tiempo_de_contencion_de_los_incendios_en_NY,
+      df_tiempo_de_contencion_de_los_incendios_en_NC,
+      df_tiempo_de_contencion_de_los_incendios_en_FL,
+      df_tiempo_de_contencion_de_los_incendios_en_MS,
+      df_tiempo_de_contencion_de_los_incendios_en_AZ,
+      df_tiempo_de_contencion_de_los_incendios_en_AL,
+      df_tiempo_de_contencion_de_los_incendios_en_SC
+      )
 
 
 #Cierre de la conexción
