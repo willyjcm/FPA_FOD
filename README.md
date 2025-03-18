@@ -16,7 +16,7 @@ Analizar el impacto de los diferentes tipos de incendios  en los diez estados es
 
 Establecer el promedio de acres afectados por incendios forestales por estado, con el fin de identificar zonas de alto riesgo y evaluar la eficacia de las estrategias de prevención.
 
-Determinar el rango de tiempo (en dias) necesario para lograr el control total de incendios forestales en cada estado durante el período 2005 y 1015, analizando la variabilidad en los tiempos de control.
+Determinar el rango de tiempo (en dias) necesario para lograr el control total de incendios forestales en cada estado durante el período 2005 y 2015, analizando la variabilidad en los tiempos de control.
 
 
 ## Marco teorico
