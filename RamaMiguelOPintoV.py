@@ -314,6 +314,22 @@ fig_4 = px.pie(
 
 fig_4.show()
 
+
+fig_5 = px.pie(
+                df_tiempo_de_contencion_de_los_incendios_en_NC,
+               values='Tardanza (en Días) de la contención del incendio',
+               names='Incendios contenidos el mismo día',
+                     title='Días en que se contuvieron los incendios en Carolina del Norte',
+                     color_discrete_sequence=Colores
+                     )
+
+fig_5.show()
+
+
+
+
+
+
 #Cierre de la conexción
 con.close()
 
