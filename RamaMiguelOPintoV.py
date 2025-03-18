@@ -38,6 +38,29 @@ WHERE
     AND LOCAL_FIRE_REPORT_ID IS NOT NULL
                                            """, con)
 
+#California
+
+
+df_tiempo_de_contencion_de_los_incendios_en_CA = pd.read_sql_query("""SELECT
+    LOCAL_FIRE_REPORT_ID AS "Reportes de Incendios",
+    FIRE_YEAR AS "Año",
+    STATE AS Estado,
+    DISCOVERY_DOY AS "Día del descubrimiento del incendio",
+    CONT_DOY AS "Día de la contención del incendio",
+    CASE
+        WHEN ABS(DISCOVERY_DOY - CONT_DOY) = 0 THEN 1
+        ELSE ABS(DISCOVERY_DOY - CONT_DOY)
+    END AS "Tardanza (en Días) de la contención del incendio",
+    CASE
+        WHEN ABS(DISCOVERY_DOY - CONT_DOY) = 0 THEN 1
+        ELSE 0
+    END AS "Incendios contenidos el mismo día"
+FROM Fires
+WHERE
+    STATE = 'CA'
+    AND CONT_DOY IS NOT NULL
+    AND LOCAL_FIRE_REPORT_ID IS NOT NULL
+                                              """, con)
 
 
 
@@ -50,4 +73,7 @@ WHERE
 
 
 
+
+#Cierre de la conexción
+con.close()
 
