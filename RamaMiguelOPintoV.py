@@ -13,7 +13,7 @@ con = sqlite3.connect(r"c:\Datos\Clase de computación\Base de datos Compu II\FP
 
 #Selección de los estados: Top 10 de estados con mayores reportes de incendios TX, CA, GA, NY, NC, FL, MS, AZ, AL, SC
 
-#Rango de los días que tardaron en contenerse los incendios y los mismos que fueron contenidor el mismo día en el estado de Texas.
+#Rango de los días que tardaron en contenerse los incendios y los mismos que fueron contenidor el mismo día en el los 10 estados.
 
 #Texas
 
@@ -358,6 +358,30 @@ fig_8 = px.pie(
             )
 
 fig_8.show()
+
+fig_9 = px.pie(
+                df_tiempo_de_contencion_de_los_incendios_en_AL,
+                values='Tardanza (en Días) de la contención del incendio',
+           names='Incendios contenidos el mismo día',
+            title='Días en que se contuvieron los incendios en Alabama',
+            color_discrete_sequence=Colores
+            )
+
+
+fig_9.show()
+
+
+
+fig_10 = px.pie(
+                df_tiempo_de_contencion_de_los_incendios_en_SC,
+                values='Tardanza (en Días) de la contención del incendio',
+           names='Incendios contenidos el mismo día',
+            title='Días en que se contuvieron los incendios en Carolina del Sur',
+            color_discrete_sequence=Colores
+            )
+
+
+fig_10.show()
 
 
 
