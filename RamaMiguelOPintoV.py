@@ -293,7 +293,15 @@ fig_2 = px.pie(
 fig_2.show()
 
 
+fig_3 = px.pie(
+                df_tiempo_de_contencion_de_los_incendios_en_GA,
+               values='Tardanza (en Días) de la contención del incendio',
+               names='Incendios contenidos el mismo día',
+                     title='Días en que se contuvieron los incendios en Georgia',
+                     color_discrete_sequence=Colores
+                     )
 
+fig_3.show()
 
 
 
